@@ -1,0 +1,14 @@
+此方式为android-studio接好sdk相关的功能,然后打成aar给unity使用。 之后可以使用unity打包，也可以导出android项目再打包。
+
+
+1: unity与android的交互参考这里
+https://www.jianshu.com/p/36f290415e45
+
+application文件不要放在Assets/Plugins/Android下
+使用aar可以带资源文件，不用aar也可以直接调用android的代码。 把.java文件直接放在unity任意位置下即可
+
+注意事项:  1: unity拷贝classes.jar时要把名字改为unity-classes.jar
+           2: 创建工程之后删除无用的xml文件和colors文件
+	   3: 打出aar之后，直接点开删除里面libs下的unity-classes.jar. 其他不用操作.
+
+
